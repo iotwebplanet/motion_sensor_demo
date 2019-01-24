@@ -1,4 +1,4 @@
-# motion_sensor_demo
+# Arduino motion_sensor_demo
 this will show how to work with pir /motion sensor with arduino
 # Required Components
 > PIR Motion Sensor 
