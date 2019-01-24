@@ -8,20 +8,20 @@ this will show how to work with pir /motion sensor with arduino
 
  # Connection Details
   
- > PIR Sensor pin             Arduino Uno pin
+ > PIR Sensor pin     :        Arduino Uno pin
  
- > GND                        GND
+ > GND                 :       GND
  
- > VCC                        5v
+ > VCC                  :      5v
  
- > OUTPUT                     3
+ > OUTPUT                 :    3
  
  
  > Buzzer pin
  
- > VCC(+)                     13
+ > VCC(+)                  :   13
  
- > GND                        GND
+ > GND                      :  GND
   
  
 
