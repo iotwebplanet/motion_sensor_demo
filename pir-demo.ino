@@ -8,7 +8,7 @@
  * PIR Sensor pin             Arduino Uno pin
  * GND                        GND
  * VCC                        5v
- * OUTPUT                     3
+ * OUTPUT                     4
  * 
  * Buzzer pin
  * VCC(+)                     13
