@@ -19,7 +19,7 @@
 
  
 int buzzer = 13;                // choose the pin for the LED
-int sensor = 3;               // choose the sensor input pin (for PIR sensor)
+int sensor = 4;               // choose the sensor input pin (for PIR sensor)
 int sensorState = LOW;             // default assuming no motion detected
 int val = 0;                    // variable for reading the sensor data
  
