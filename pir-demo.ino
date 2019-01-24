@@ -24,7 +24,7 @@ int sensorState = LOW;             // default assuming no motion detected
 int val = 0;                    // variable for reading the sensor data
  
 void setup() {
-  pinMode(13, OUTPUT);      // declare LED as output
+  pinMode(buzzer, OUTPUT);      // declare LED as output
   pinMode(sensor, INPUT);     // declare sensor as input
  
   Serial.begin(9600);   //for debug
