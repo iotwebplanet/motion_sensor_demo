@@ -1,6 +1,22 @@
 /*
-All components availble at iotwebplanet.com
+* All components availble at iotwebplanet.com
 */
+
+/*
+ * Connection Details
+ * 
+ * PIR Sensor pin             Arduino Uno pin
+ * GND                        GND
+ * VCC                        5v
+ * OUTPUT                     3
+ * 
+ * Buzzer pin
+ * VCC(+)                     13
+ * GND                        GND
+ * 
+ */
+
+
  
 int buzzer = 13;                // choose the pin for the LED
 int sensor = 3;               // choose the sensor input pin (for PIR sensor)
@@ -15,21 +31,17 @@ void setup() {
 }
  
 void loop(){
-  val = digitalRead(sensor);  // read sensor input value
-  if (val == HIGH) {            // check if the sensor is HIGH
-    digitalWrite(buzzer, HIGH);  // turn Buzzer/light ON
-    if (sensorState == LOW) {
-      // we have just turned on
-      Serial.println("Motion detected!");
-      // We only want to print on the output change, not state
+  val = digitalRead(sensor);                      // read sensor input value
+  if (val == HIGH) {                             // check if the sensor is HIGH
+    digitalWrite(buzzer, HIGH);                 // turn Buzzer/light ON
+    if (sensorState == LOW) {                  // we have just turned on
+      Serial.println("Motion detected!");     // We only want to print on the output change, not state
       sensorState = HIGH;
     }
   } else {
-    digitalWrite(buzzer, LOW); // turn LED OFF
-    if (sensorState == HIGH){
-      // we have just turned of
-      Serial.println("Motion ended!");
-      // We only want to print on the output change, not state
+    digitalWrite(buzzer, LOW);           // turn Light/Buzzer OFF
+    if (sensorState == HIGH){           // we have just turned of
+      Serial.println("Motion ended!"); // We only want to print on the output change, not state
       sensorState = LOW;
     }
   }
